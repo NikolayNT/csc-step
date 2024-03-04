@@ -1,8 +1,310 @@
 <template>
-  <!--<svg viewBox="0 0 200 200" class="pie">
-    <path id="first"></path>
-    <path id="second"></path>
-  </svg>-->
+
+<div class="profile">
+    <div style="display: flex; margin-left: 20px; margin-top: 20px;">
+      <div style="display: flex; margin-left: 20px; margin-top: 5px;">
+      <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Дата</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>01.05.2024</p>
+      </div>
+    </div>
+    </div>
+
+    <div style="display: flex; margin-left: 20px; margin-top: 20px;">
+      <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Номер</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;  border-right: 0;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>ФИО</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;  border-right: 0;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Кол-во шагов</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Ссылка на скриншот</p>
+      </div>
+    </div>
+    <div style="display: flex; margin-left: 20px; margin-top: 5px;">
+      <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>1</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;  border-right: 0;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Петров Василий...</p>
+      </div>
+
+      <div style="height: 40px; width: 200px; border: 5px solid black;  border-right: 0;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>2000</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>http//test.ru/1.png</p>
+      </div>
+      <img src="../../src/img/pen.png"
+        style="height: 40px; width: 40px; border-radius: 50%; margin-top: 7px; margin-left: 10px;">
+    </div>
+    <div style="display: flex; margin-left: 20px; margin-top: 5px;">
+      <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>2</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;  border-right: 0;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Сушков Александр...</p>
+      </div>
+
+      <div style="height: 40px; width: 200px; border: 5px solid black;  border-right: 0;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>3000</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>http//test.ru/2.png</p>
+      </div>
+      <img src="../../src/img/pen.png"
+        style="height: 40px; width: 40px; border-radius: 50%; margin-top: 7px; margin-left: 10px;">
+    </div>
+
+
+    <div style="margin-top: 30px; margin-left: 20px; display: flex;">Статистика:</div>
+    <div style="display: flex; margin-left: 20px; margin-top: 5px;">
+      <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Среднее</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>5000</p>
+      </div>
+    </div>
+    <div style="display: flex; margin-left: 20px; margin-top: 5px;">
+      <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Максимум</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;border-right: 0;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>9000</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;  ;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Сушков Александр...</p>
+      </div>
+    </div>
+
+    
+
+    <div style="display: flex; margin-left: 20px; margin-top: 5px;">
+      <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Минимум</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;background-color: white;border-right: 0;display: flex;align-items: center;
+    justify-content: center;">
+        <p>2300</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;  ;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Петров Виктор...</p>
+      </div>
+    </div>
+
+    <div style="display: flex; margin-left: 20px; margin-top: 5px;">
+      <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Общее</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>25000</p>
+      </div>
+    </div>
+    
+  </div>
+
+
+  <div class="profile">
+    <div style="display: flex; margin-left: 20px; margin-top: 20px;">
+      <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Дата</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;  border-right: 0;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Колличество шагов</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Ссылка на скриншот</p>
+      </div>
+    </div>
+    <div style="display: flex; margin-left: 20px; margin-top: 5px;">
+      <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>01.05.2024</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;  border-right: 0;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>7500</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>http//test.ru/1.png</p>
+      </div>
+      <img src="../../src/img/pen.png"
+        style="height: 40px; width: 40px; border-radius: 50%; margin-top: 7px; margin-left: 10px;">
+    </div>
+    <div style="display: flex; margin-left: 20px; margin-top: 5px;">
+      <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>02.05.2024</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;  border-right: 0;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>5300</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>http//test.ru/2.png</p>
+      </div>
+      <img src="../../src/img/pen.png"
+        style="height: 40px; width: 40px; border-radius: 50%; margin-top: 7px; margin-left: 10px;">
+
+    </div>
+    <div style="display: flex; margin-left: 20px; margin-top: 5px;">
+      <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: grey;display: flex;align-items: center;
+    justify-content: center;">
+        <p>03.05.2024</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;  border-right: 0;background-color: grey;display: flex;align-items: center;
+    justify-content: center;">
+        <p>5900</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black; background-color: grey;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Загрузить подтверждение</p>
+      </div>
+
+      <img src="../../src/img/pen.png"
+        style="height: 40px; width: 40px; border-radius: 50%; margin-top: 7px; margin-left: 10px;">
+
+
+    </div>
+    <div style="margin-top: 30px; margin-left: 20px; display: flex;">Статистика:</div>
+    <div style="display: flex; margin-left: 20px; margin-top: 5px;">
+      <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Среднее</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>5000</p>
+      </div>
+    </div>
+    <div style="display: flex; margin-left: 20px; margin-top: 5px;">
+      <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Максимум</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>9000</p>
+      </div>
+    </div>
+
+    
+
+    <div style="display: flex; margin-left: 20px; margin-top: 5px;">
+      <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Минимум</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>2300</p>
+      </div>
+    </div>
+
+    <div style="display: flex; margin-left: 20px; margin-top: 5px;">
+      <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>Общее</p>
+      </div>
+      <div style="height: 40px; width: 200px; border: 5px solid black;background-color: white;display: flex;align-items: center;
+    justify-content: center;">
+        <p>25000</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="profile">
+    <div style="display: flex;">
+
+      <img src="../../src/img/blue-arrow-23.png" style="height: 100px; width: 100px; border-radius: 50%; background-color: blue;display: flex;align-items: center;
+    justify-content: center; margin: 20px;">
+
+      <div style="display: flex;align-items: center; flex-direction: column; margin-left: 50px; align-items: flex-end">
+        <div style="display: flex;align-items: center">
+          <p>ФИО:</p>
+          <div style="height: 40px; width: 300px; border-radius: 10px; background-color: white;display: flex;align-items: center;
+    justify-content: center; margin: 20px;">
+            <p>Петров Василий Сергеевич</p>
+          </div>
+        </div>
+
+        <div
+          style="display: flex;align-items: center; flex-direction: column; margin-left: 50px; justify-content: flex-end;align-items: flex-end">
+          <div style="display: flex;align-items: center">
+            <p>Почтовый адрес:</p>
+            <div style="height: 40px; width: 300px; border-radius: 10px; background-color: white;display: flex;align-items: center;
+    justify-content: center; margin: 20px;">
+              <p>test-mail@cscentr.com</p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <div
+          style="display: flex;align-items: center; flex-direction: column; margin-left: 50px; justify-content: flex-end;align-items: flex-end">
+          <div style="display: flex;align-items: center">
+            <p>Ник в телеграмм:</p>
+            <div style="height: 40px; width: 300px; border-radius: 10px; background-color: white;display: flex;align-items: center;
+    justify-content: center; margin: 20px;">
+              <p>@test78778</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="display: flex;align-items: center; flex-direction: column; margin-left: 50px; justify-content: flex-end;align-items: flex-end">
+          <div style="display: flex;align-items: center">
+            <p>Команда:</p>
+            <div style="height: 40px; width: 300px; border-radius: 10px; background-color: white;display: flex;align-items: center;
+    justify-content: center; margin: 20px;">
+              <p>Скороходы</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="parent-canvas" :style="{ 'width': canvasObj.width + 'px', 'height': canvasObj.height + 'px' }">
     <canvas id="canvas" :width="this.canvasObj.width" :height="this.canvasObj.height" class="canvas"></canvas>
     <img src="../../src/img/blue-arrow-23.png" class="arrow">
@@ -98,7 +400,7 @@ export default {
   },
   mounted() {
     this.$nextTick(function () {
-      
+
       this.sliderValue = 50;
       this.secondValue = 50;
       this.threeValue = 50;
@@ -309,6 +611,10 @@ export default {
 </script>
 
 <style scoped>
+.profile {
+  height: 1000px;
+}
+
 h3 {
   margin: 40px 0 0;
 }
@@ -377,7 +683,7 @@ p {
 
 .result-text {
   position: absolute;
-  left:115px;
+  left: 115px;
   bottom: -90px;
   width: max-content;
   text-align: left;
