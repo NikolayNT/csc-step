@@ -1,6 +1,6 @@
 <template>
 
-<div class="profile">
+<div class="profile red">
     <div style="display: flex; margin-left: 20px; margin-top: 20px;">
       <div style="display: flex; margin-left: 20px; margin-top: 5px;">
       <div style="height: 40px; width: 200px; border: 5px solid black; border-right: 0; background-color: white;display: flex;align-items: center;
