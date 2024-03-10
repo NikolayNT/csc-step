@@ -29,7 +29,7 @@
       <div class="cell">{{ this.countMedium() }}</div>
       <div class="cell">{{ this.countAll() }}</div>
     </div>
-    <!--<LineChart></LineChart>-->
+    <LineChart></LineChart>
   </div>
 </template>
 
@@ -40,12 +40,12 @@ import { personalData } from '@/test-data/testData';
 import PersonalTitleVue from '@/components/stringTable/PersonalTitle.vue';
 import PersonalString from '@/components/stringTable/PersonalString.vue';
 
-//import LineChart from '@/components/chart/LineChart.vue';
+import LineChart from '@/components/chart/LineChart.vue';
 
 export default {
   name: 'PersonalVue',
   components: {
-    PersonalTitleVue, PersonalString, /*LineChart*/
+    PersonalTitleVue, PersonalString, LineChart
   },
   data() {
     return {

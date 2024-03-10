@@ -4,20 +4,20 @@
     <p>Новость смогут задать заранее определённые сотрудники.</p>
     <div v-html="text" id="newContent">
     </div>
-    <!--<QuillEditor :modules="modules" toolbar="full" id="editor"/>-->
+    <QuillEditor :modules="modules" toolbar="full" id="editor"/>
     <button @click="save" class="news__button">Сохранить</button>
   </div>
 </template>
 
 <script>
 
-/*import { QuillEditor } from '@vueup/vue-quill'
-import '@vueup/vue-quill/dist/vue-quill.snow.css';*/
+import { QuillEditor } from '@vueup/vue-quill'
+import '@vueup/vue-quill/dist/vue-quill.snow.css';
 
 export default {
   name: 'HomeView',
   components: {
-     /*QuillEditor*/
+     QuillEditor
   },
   data() {
     const text = ''
