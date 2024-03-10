@@ -3,9 +3,9 @@ module.exports = defineConfig({
   transpileDependencies: true
 })*/
 
-/*module.exports = {
-  publicPath: process.env.NODE_ENV === "production" ? "/Random-wheel/" : "/",
-};*/
+module.exports = {
+  publicPath: process.env.NODE_ENV === "production" ? "/csc-step/" : "/",
+};
 
 // vue.config.js
 /*const path = require('path')
