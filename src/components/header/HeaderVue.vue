@@ -1,6 +1,8 @@
 <template>
   <div class="header">
-    <img class="header__logo" src="../../img/logo.png">
+    <a class="header__link" href="https://it.cscentr.com/ru/">
+      <img class="header__logo" src="../../img/logo.png">
+    </a>
     <div class="header__menu">
       <ButtonMenu path="/newsfeed" name="Лента" />
       <ButtonMenu path="/overall" name="Общие результаты" />
@@ -42,8 +44,16 @@ export default {
 }
 
 .header__logo {
+  height: 100%;
+}
+
+.header__logo:hover {
+  opacity: .9;
+}
+
+.header__link {
   height: 80%;
-   margin: 0 auto 0 20px;
+  margin: 0 auto 0 20px;
 }
 
 .header__menu {

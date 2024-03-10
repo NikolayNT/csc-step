@@ -3,13 +3,11 @@
     <p class="block__text-title">{{ textTitle }}: </p>
     <div v-if="change" class="block__content">
       <p class="block__text">{{ text }}</p>
-      <button @click="changeBlok" class="block__button">Изменить</button>
     </div>
     <div v-else  class="block__content">
       <input :value="text" class="block__input"/>
-      <button @click="changeBlok" class="block__button">Сохранить</button>
     </div>
-
+    <button @click="changeBlok" :class="['block__button', !change && 'block__button_type_save']">{{ change ? 'Изменить' : 'Сохранить' }}</button>
   </div>
 </template>
   
@@ -106,6 +104,17 @@
     height: 100%;
     width: 100px;
     cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: 1s;
+  }
+
+  .block__button:hover {
+    opacity: 0.9;
+  }
+
+  .block__button_type_save {
+    background-color: #FF9C00;
   }
   </style>
   

@@ -18,7 +18,7 @@
     </div>
     <div class="profile__achievements">
       <h2 class="profile__achievements-title">Достижения</h2>
-      <template v-for="item in personalData['achievements']" :key="item['id']" >
+      <template v-for="item in personalData['achievements']" :key="item['id']">
         <AchievementVue :achieve="item"></AchievementVue>
       </template>
     </div>
@@ -34,7 +34,7 @@ import AchievementVue from '@/components/profile/Achievement.vue';
 
 export default {
   name: 'ProfileVue',
-  components: { TextInputVue, AchievementVue},
+  components: { TextInputVue, AchievementVue },
   data(){
     const personalData = personal;
     console.log(personalData['achievements']);

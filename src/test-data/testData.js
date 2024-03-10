@@ -25,4 +25,49 @@ const personal = {
   ]
 }
 
-export {personal};
+const personalData = [
+  {
+    'id': 123,
+    'date': '05.03.2024',
+    'steps': 8000,
+    'screenshot': 'link',
+  },
+  {
+    'id': 124,
+    'date': '06.03.2024',
+    'steps': 5000,
+    'screenshot': '',
+  },
+  {
+    'id': 125,
+    'date': '07.03.2024',
+    'steps': 3000,
+    'screenshot': 'link',
+  },
+  {
+    'id': 126,
+    'date': '08.03.2024',
+    'steps': 4000,
+    'screenshot': 'link',
+  },
+  {
+    'id': 127,
+    'date': '09.03.2024',
+    'steps': 7000,
+    'screenshot': '',
+  },
+  {
+    'id': 128,
+    'date': '10.03.2024',
+    'steps': 1000,
+    'screenshot': 'link',
+  },
+  {
+    'id': 129,
+    'date': '11.03.2024',
+    'steps': '',
+    'screenshot': '',
+  },
+]
+
+export {personal, personalData};

@@ -37,6 +37,8 @@
     color: black;
     background-color: white;
     border-right: 1px solid grey;
+    transition-property: background-color;
+    transition-duration: 1s;
   }
 
   .button__link:last-of-type {
