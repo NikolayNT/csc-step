@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <a class="header__link" href="https://it.cscentr.com/ru/">
+    <a class="header__link" href="">
       <img class="header__logo" src="../../img/logo.png">
     </a>
     <div class="header__menu">
